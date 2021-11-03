@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Tutorials Ninja Test Automation Regression suite" guice-stage="DEVELOPMENT" parallel="tests" thread-count="2">
+<listeners>
+		<listener
+			class-name="com.qa.opencart.TestListeners.TestAllureListener" />
+	</listeners>
+  <test thread-count="2" name="LoginPage Test" >
+    <classes>
+      <class name="com.qa.opencart.tests.LoginPageTest"/>
+    </classes>
+  </test> <!-- Default test -->
+  <test thread-count="5" name="AccountsPage Test" >
+    <classes>
+      <class name="com.qa.opencart.tests.AccountsPageTest"/>
+    </classes>
+  </test> <!-- Default test -->
+</suite> <!-- Default suite -->
